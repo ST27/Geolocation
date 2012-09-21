@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+    
+    <!-- Titre de l'écran principal -->
+
+    <TextView
+        android:id="@+id/titreMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreMain"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- Début : Paramétrer le temps entre deux points -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTemps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textTemps"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTemps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:hint="@string/hintEditTemps" />
+    </LinearLayout>
+    <!-- Fin : Paramétrer le temps entre deux points -->
+
+
+    <!-- Début : Paramétrer la distance entre deux points -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textDistance"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editDistance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:hint="@string/hintEditDistance" />
+    </LinearLayout>
+    <!-- Fin : Paramétrer la distance entre deux points -->
+
+
+    <!-- Début : Paramétrer le nombre de position non communiquée à conserver -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textNbPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textNbPosition"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editNbPosition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="@string/hintNbPosition" />
+    </LinearLayout>
+	<!-- Fin : Paramétrer le nombre de position non communiquée à conserver -->
+</LinearLayout>
+	
+
+
+
+    <!-- Bouton -->
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_weight="0" >
+
+	    <Button
+	        android:id="@+id/boutonActiverService"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="@string/boutonActiverService" />
+		
+	    <Button
+	        android:id="@+id/boutonConsulter"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/boutonConsulter" />
+	    
+	</LinearLayout>
+	<Button
+	        android:id="@+id/boutonQuitter"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:text="@string/boutonQuitter" />
+	
+</LinearLayout>

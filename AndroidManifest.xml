@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="utbm.tx52.suiviGPS"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7"/>
+    
+    <!-- Permission -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS"/>
+    <uses-permission android:name="android.permission.LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+    	<!-- Obligatoire pour utiliser la carte google maps -->
+    	<uses-library android:name="com.google.android.maps"/>
+
+    	<!-- Activité principale -->
+        <activity
+            android:name=".UTBMSuiviGPSActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="utbm.tx52.suiviGPS.WAKE_UP"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <!-- Activités-->
+        <activity android:name=".SelectionDateActivity"/>
+        <activity android:name=".CarteGMapActivity"/>
+        <activity android:name=".ParamActivity" android:label="Suivi GPS - Paramétrage avancé"></activity>
+        
+        <!-- Service -->
+        <service android:name=".GeolocalisationService"/>
+        
+        <!-- Broadcast receiver -->
+        <receiver android:name=".SmsIntentReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

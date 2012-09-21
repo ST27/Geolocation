@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/optMParam" android:title="Paramètres" />
+<item android:id="@+id/optMSuppr" android:title="Supprimer">
+	<menu android:id ="@+id/sousMenuSupprimer">
+	    <item android:id="@+id/optSsMenuSupprimerTout" android:title="Supprimer toutes les dates"/>
+	    <item android:id="@+id/optSsMenuSupprimerSelection" android:title="Supprimer selon les dates"/>
+	</menu>    
+</item>
+<item android:id="@+id/optMQuitter" android:title="Quitter" />
+
+
+</menu>

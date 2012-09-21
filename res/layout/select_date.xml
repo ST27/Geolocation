@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <!-- Début : Paramétrer la date de début-->
+	 
+	    <TextView
+	        android:id="@+id/textDateDebut"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/textDateDebut"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/editDateDebut"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/hintEditDateDebut"
+	        android:inputType="datetime"
+	        android:ems="10" />
+	</LinearLayout>
+	<!-- Fin : Paramétrer la date de début -->
+	
+	
+	<!-- Début : Paramétrer la date de fin -->
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_weight="1"  >
+	  	
+	  	<TextView
+	        android:id="@+id/textDateFin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/textDateFin"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	 
+	    <EditText
+	        android:id="@+id/editDateFin"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/hintEditDateFin"
+	        android:inputType="datetime"
+	        android:ems="10">
+	    </EditText>
+
+	</LinearLayout>
+	    <!-- Fin : Paramétrer Paramétrer la date de fin -->
+	    
+
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+	
+		
+		<Button
+		    android:id="@+id/boutonValiderSelectDate"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="@string/boutonValiderSelectDate" />
+			
+		<Button
+		    android:id="@+id/boutonAnnulerSelectDate"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="@string/boutonAnnulerSelectDate" />
+	</LinearLayout>	
+</LinearLayout>

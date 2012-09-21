@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="1" >
+	    <!-- Début : Paramétrer l'adresse du site web-->
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	 
+	        <TextView
+	            android:id="@+id/textAdresseSite"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/textAdresseSite"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <EditText
+	            android:id="@+id/editAdresseSite"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:inputType="textUri"
+	            android:hint="@string/hintEditAdresseSite"
+	            android:ems="10" />
+	    </LinearLayout>
+	    <!-- Fin : Paramétrer l'adresse du site web -->
+	
+	
+	    <!-- Début : Paramétrer le numéro capable d'activer l'application à distance -->
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/textNumEmetteur"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/textNumEmetteur"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <EditText
+	            android:id="@+id/editNumEmetteur"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				android:inputType="phone"
+	            android:hint="@string/hintEditNumEmetteur"
+	            android:ems="10" />
+	    </LinearLayout>
+	    <!-- Fin : Paramétrer le numéro capable d'activer l'application à distance -->
+	
+	
+	    <!-- Début : Paramétrer l'identifiant de l'appareil mobile enregistré dans le site web -->
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/textUUIDMobile"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/textUUIDMobile"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <EditText
+	            android:id="@+id/editUUIDMobile"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/hintEditUUIDMobile"
+	            android:ems="10" />
+	    </LinearLayout>
+	
+	    <!-- Fin : Paramétrer l'identifiant de l'appareil mobile enregistré dans le site web  -->
+	</LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+		<Button
+	        android:id="@+id/boutonParamValider"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/boutonParamValider" />
+		<Button
+	        android:id="@+id/boutonAnnuler"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/boutonAnnuler" />
+	</LinearLayout>
+</LinearLayout>

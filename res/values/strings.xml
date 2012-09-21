@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+	<string name="app_name">Suivi GPS</string>
+
+     <!-- Vue de l'écran principal 'res/layout/main.xml'  -->
+    <string name="titreMain">Paramétrer le suivi GPS</string>
+    
+    
+    <string name="textTemps">Paramétrer le temps</string>
+    <string name="hintEditTemps">Saisir le temps en seconde</string>
+    
+    <string name="textDistance">Paramétrer la distance</string>
+    <string name="hintEditDistance">Saisir la distance en mètre</string>
+    
+    <string name="textNbPosition">Nombre position non-communiquée à conserver</string>
+    <string name="hintNbPosition">Saisir le nombre</string>
+    
+    <string name="boutonConsulter">Consulter</string>
+    <string name="boutonActiverService">Activer suivi</string>
+    <string name="boutonQuitter">Quitter</string>
+    
+    <!-- Vue du paramétrage avancé 'res/layout/param.xml'-->
+    <string name="titreParam">Paramétrage avancé</string>
+    
+    <string name="textAdresseSite">Adresse du site web </string>
+	<string name="hintEditAdresseSite"></string>
+	
+	<string name="textNumEmetteur">Numéro d\'émetteur </string>
+    <string name="hintEditNumEmetteur"></string>
+    
+    <string name="textUUIDMobile">Numéro de l\'appareil </string>
+	<string name="hintEditUUIDMobile"></string>
+	
+	
+	<string name="boutonAnnuler">Annuler</string>    
+    <string name="boutonParamValider">Valider</string>
+    
+       <!-- Vue de la sélection des dates -->
+    <string name="textDateDebut">Date de début</string>
+   	<string name="hintEditDateDebut">JJ-MM-AAAA hh-mm-ss</string>
+	
+	<string name="textDateFin">Date de fin</string>
+   	<string name="hintEditDateFin">JJ-MM-AAAA hh-mm-ss</string>
+	
+    <string name="boutonValiderSelectDate">Valider</string>
+    <string name="boutonAnnulerSelectDate">Annuler</string>
+    
+    
+    <string name="CleAPIGoogleMaps">0yk2S_smjWh8w5PeHJ555D3BYng_pV3j3HMjKlQ</string>
+    
+</resources>
